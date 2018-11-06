@@ -1,0 +1,22 @@
+<!-- component/input_com/input_com.wxml -->
+<view class="container_com">
+  <image src='{{input_logo}}' class='logo' mode="widthFix"></image>
+
+  <input class="search_bar"
+         placeholder='{{inputHint}}' 
+         bindconfirm='{{confirmTap}}' 
+         bindinput='inputListener' 
+         bindconfirm='inputConfirm' 
+         value='{{inputValue}}' 
+         type='{{inputType}}' 
+         
+         confirm-type='{{confirmType}}'> <!-- 核心就是那两个事件监听函数 -->
+
+    <image class="search_ico" src='{{search_ico}}' mode="widthFix"></image>
+  </input>
+
+   <image class="{{isClearShow?'clearImgShow':'clearImgHide'}}" src='image/close.png' bindtap='clearTap' mode='widthFix'></image>
+  <!-- bindconfirm 是点击小键盘上的搜索按钮就触发要执行的方法 -->
+</view>
+<!-- 使用组件时可以这样写 -->
+<!-- <component-tag-name bind:myevent="onMyEvent" /> -->

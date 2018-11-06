@@ -1,0 +1,35 @@
+/* component/input_com/input_com.wxss */
+.container_com{
+  display: flex;
+  flex-direction: row;
+  background-color: #ffb400;
+  width:100%;
+  height:150rpx;
+  justify-content:space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.logo{
+  display: inline-block;
+ 
+  width: 100rpx;
+}
+.search_bar{
+  padding: 0 50rpx;
+  display: inline-block;
+  border-radius: 36rpx;
+  background-size: 50rpx 50rpx;
+  background: white ;
+  
+  width: 450rpx;
+  height: 80rpx;
+}
+.search_ico{
+  height: 90rpx;
+}
+.clearImgShow{
+  display:inline-block;
+}
+.clearImgHide{
+  display: none;
+}
