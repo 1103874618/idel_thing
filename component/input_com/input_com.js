@@ -37,7 +37,8 @@ Component({
       input_logo:"image/idel_logo.png",
       search_ico:"image/search_ico.png",
       isClearShow:false,
-      clear:""
+      clear:"",
+    search_bar_class:"search_bar_ico_show"
   },
 
   /**
@@ -83,6 +84,16 @@ Component({
         inputValue: ''//清除内容
       });
     },
+    search_bar_tap_listener:function(){
+        this.setData({
+          search_bar_class:"search_ico_unshow",
+        });
+    },
+    search_bar_bulr_listener:function(){
+      this.setData({
+        search_bar_class: "search_bar_ico_show",
+      });
+    }
 
 
 

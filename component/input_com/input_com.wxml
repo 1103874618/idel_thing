@@ -2,20 +2,18 @@
 <view class="container_com">
   <image src='{{input_logo}}' class='logo' mode="widthFix"></image>
 
-  <input class="search_bar"
+  <input class="search_bar {{search_bar_class}}"
          placeholder='{{inputHint}}' 
          bindconfirm='{{confirmTap}}' 
          bindinput='inputListener' 
          bindconfirm='inputConfirm' 
          value='{{inputValue}}' 
          type='{{inputType}}' 
-         
+         bindtap='search_bar_tap_listener'
+         bindblur='search_bar_bulr_listener'
          confirm-type='{{confirmType}}'> <!-- 核心就是那两个事件监听函数 -->
-
-    <image class="search_ico" src='{{search_ico}}' mode="widthFix"></image>
+            <image class="{{isClearShow?'clearImgShow':'clearImgHide'}}" src='image/close.png' bindtap='clearTap' mode='aspectFit'></image>
   </input>
-
-   <image class="{{isClearShow?'clearImgShow':'clearImgHide'}}" src='image/close.png' bindtap='clearTap' mode='widthFix'></image>
   <!-- bindconfirm 是点击小键盘上的搜索按钮就触发要执行的方法 -->
 </view>
 <!-- 使用组件时可以这样写 -->

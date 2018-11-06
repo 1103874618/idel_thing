@@ -15,20 +15,36 @@
   width: 100rpx;
 }
 .search_bar{
+  position: relative;
   padding: 0 50rpx;
   display: inline-block;
   border-radius: 36rpx;
-  background-size: 50rpx 50rpx;
+  
   background: white ;
+  
+  background-repeat: no-repeat;
+  background-position:-10rpx 10rpx;
+  background-size: 60rpx 60rpx;
+  background-origin: content-box;
   
   width: 450rpx;
   height: 80rpx;
 }
-.search_ico{
-  height: 90rpx;
+.search_bar_ico_show{
+  background-image: url("https://ws1.sinaimg.cn/large/9448bbf8gy1fwym5cyaddj201i01i3yb.jpg") ;
 }
+.search_ico_unshow{
+  background-image: none;
+}
+
 .clearImgShow{
   display:inline-block;
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  right: 50rpx;
+  top: 15rpx;
+  z-index: 10;
 }
 .clearImgHide{
   display: none;
