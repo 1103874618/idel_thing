@@ -1,0 +1,5 @@
+<!--component/divide_item/divide_item.wxml-->
+<view class='divide_item_view'>
+  <image src='' class='divide_item_img'></image>
+  <text>{{divide_item}}</text>
+</view>

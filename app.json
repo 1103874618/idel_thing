@@ -6,11 +6,14 @@
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "white",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle":"black",
+    "navigationStyle": "custom"
   },
   "usingComponents": {
-    "input_com": "component/input_com/input_com"
+    "input_com": "component/input_com/input_com",
+    "thing_divide":"component/thing_divide/thing_divide",
+    "divide_item":"component/divide_item/divide_item"
     
   }
 }

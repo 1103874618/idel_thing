@@ -1,0 +1,9 @@
+/* component/divide_item/divide_item.wxss */
+.divide_item_img{
+  background: #666;
+  width: 100%;
+  height: 80%;
+}
+.divide_item_view{
+  
+}

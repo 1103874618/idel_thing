@@ -1,6 +1,4 @@
 <!--component/thing_divide/thing_divide.wxml-->
 <view class='divide_container'>
-  <view>
-  
-  </view>
+  <divide_item />
 </view>

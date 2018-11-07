@@ -3,13 +3,8 @@
   <view class='top_bar'>
    <input_com />
   </view>
-
-    <view class='search_bar'>
-      <input class=''></input>
-    </view>
-  
-  <view class='class_divide'>
-    
+  <view class='divide_view'>
+    <thing_divide />
   </view>
 
   <view class='thing_show'>

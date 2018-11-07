@@ -1,5 +1,8 @@
 /**index.wxss**/
 
 .container{
-  
+ 
+}
+.divide_view{
+  padding: 60rpx  44rpx;
 }
